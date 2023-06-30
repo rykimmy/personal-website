@@ -20,6 +20,46 @@ body {
     padding: 0px;
 }
 
+.coverTitle {
+    color: white;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    font-size: 3em;
+    font-weight: 400;
+    /* word-wrap:break-word; */
+
+    text-align: center;
+}
+
+.coverDescription {
+    color: white;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    font-size: 0.7em;
+    font-weight: 100;
+    text-align: center;
+    width: 100vw;
+}
+
+.coverDescription2 {
+    color: white;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    font-size: 0.4em;
+    font-weight: 100;
+    text-align: center;
+    width: 100vw;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -96,42 +136,115 @@ section:nth-child(odd) {
     background-color: #323946;
 }
 
-.coverTitle {
-    color: white;
-    position: absolute;
-    top: 12%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-
-    font-size: 3em;
-    font-weight: 400;
-    /* word-wrap:break-word; */
-
-    text-align: center;
+#about {
+    display: block;
 }
 
-.coverDescription {
-    color: white;
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, 50%);
+.sectionTitle {
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 1vh;
+    font-size: 0.5em;
+    /* color: rgb(231, 150, 1); */
+    color: aqua;
+}
 
+/* "Let me introduce myself" */
+.sectionSubtitle {
+    text-align: center;
     font-size: 0.7em;
-    font-weight: 100;
-    text-align: center;
-    width: 100vw;
+    
+    padding-bottom: 5vh;
+
+    font-weight: 200;
+
 }
 
-.coverDescription2 {
-    color: white;
-    position: absolute;
-    top: 57%;
-    left: 50%;
-    transform: translate(-50%, 50%);
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50vw;
 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dp {
+    /* display: block; */
+
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%; */
+
+    max-width: 300px;
+    max-height: 300px;
+
+    border-radius: 50%;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#aboutText {
     font-size: 0.4em;
-    font-weight: 100;
+    margin-left: 5vw;
+}
+
+/* "Languages and Technologies" */
+#subheader {
     text-align: center;
-    width: 100vw;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    font-size: 0.7em;
+    /* color: rgb(231, 150, 1); */
+
+    font-weight: 400;
+}
+
+.languagesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    width: 60vw;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15vh;
+}
+
+.languageItem {
+    box-shadow: none;
+
+    transition: all .3s ease-in-out;
+
+    background-color: white;
+    /* background-color: orange; */
+
+    border-radius: 5px;
+
+    padding: 10px;
+}
+
+.languageItem:hover {
+    transform: scale(1.1);
+    background-color: orange;
+}
+
+/* Text */
+.language {
+    margin-bottom: 0.5em;
+    font-size: 0.2em;
+    text-align: center;
+    color: #1f242d;
+    /* color: aqua; */
+
+    font-weight: 500;
+}
+
+.languageImg {
+    max-width: 50px;
+    max-height: 50px;
 }

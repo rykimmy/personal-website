@@ -5,6 +5,7 @@ import viteLogo from '/vite.svg'
 import './styles.css'
 import cover from '../cover.jpg'
 import Navigation from './components/Navigation'
+import About from './components/About'
 import { useLocation, useNavigate } from "react-router-dom";
 
 // window.onbeforeunload = function () {
@@ -85,7 +86,8 @@ function App() {
           <div className="coverDescription2">Background Pc: Hong Kong Sunset by Ryan Kim</div>
         </section>
 
-        <section id="about">About</section>
+        {/* <section id="about">About</section> */}
+        <About />
         <section id="education">Education</section>
         <section id="experience">Experience</section>
         <section id="projects">Projects</section>
