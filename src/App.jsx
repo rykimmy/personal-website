@@ -6,6 +6,7 @@ import './styles.css'
 import cover from '../cover.jpg'
 import Navigation from './components/Navigation'
 import About from './components/About'
+import Education from './components/Education'
 import { useLocation, useNavigate } from "react-router-dom";
 
 // window.onbeforeunload = function () {
@@ -87,8 +88,14 @@ function App() {
         </section>
 
         {/* <section id="about">About</section> */}
-        <About />
-        <section id="education">Education</section>
+        <section id="about">
+          <About />
+        </section>
+
+        {/* <section id="education">Education</section> */}
+        <section id="education">
+          <Education />
+        </section>
         <section id="experience">Experience</section>
         <section id="projects">Projects</section>
         <section id="activities">Activities</section>
