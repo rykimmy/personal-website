@@ -2,7 +2,6 @@ import EducationItems from './EducationItems'
 import location from '../../location.png'
 import date from '../../date.png'
 
-
 function Education() {
 
     return (

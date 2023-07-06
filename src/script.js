@@ -2,6 +2,7 @@
 // Get sections and tags for the nav bar to check their classes
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
+
 // Highlights active page on navbar on scroll
 window.onscroll = () => {
     sections.forEach(sec => {
@@ -18,3 +19,21 @@ window.onscroll = () => {
         };
     });
 };
+
+// window.addEventListener('scroll', () => {
+//     let current = '';
+//     sections.forEach(section => {
+//         const sectionTop = section.offsetTop;
+//         const sectionHeight = section.clientHeight;
+//         if (scrollY >= (sectionTop - sectionHeight / 3)) {
+//             current = section.getAttribute('id');
+//         }
+//     })
+
+//     navLinks.forEach(link => {
+//         link.classList.remove('active');
+//         if (link.classList.contains(current)) {
+//             link.classList.add('active');
+//         }
+//     });
+// })
