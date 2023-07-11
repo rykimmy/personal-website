@@ -10,12 +10,6 @@ import Education from './components/Education'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Activities from './components/Activities'
-import { useLocation, useNavigate } from "react-router-dom";
-import {Helmet} from "react-helmet";
-
-// window.onbeforeunload = function () {
-//   window.scrollTo(0, 0);
-// }
 
 function App() {
 
@@ -39,57 +33,9 @@ function App() {
     window.history.scrollRestoration = 'manual'
   }
 
-
-  // HIGHLIGHTING ACTIVE PAGE ON NAVBAR
-  // Get sections and tags for the nav bar to check their classes
-  // let sections = document.querySelectorAll('section');
-  // let navLinks = document.querySelectorAll('header nav a');
-  // // Highlights active page on navbar on scroll
-  // window.onscroll = () => {
-  //   sections.forEach(sec => {
-  //     let top = window.scrollY;
-  //     let offset = sec.offsetTop - 200;
-  //     let height = sec.offsetHeight;
-  //     let id = sec.getAttribute('id');
-
-  //     if (top >= offset && top < offset + height) {
-  //       navLinks.forEach(links => {
-  //         links.classList.remove('active');
-  //         document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-  //       });
-  //     };
-  //   });
-  // };
-
-  // window.addEventListener('scroll', () => {
-  //   let current = '';
-  //   sections.forEach(section => {
-  //     const sectionTop = section.offsetTop;
-  //     const sectionHeight = section.clientHeight;
-  //     if (scrollY >= (sectionTop - sectionHeight / 3)) {
-  //       current = section.getAttribute('id');
-  //     }
-  //   })
-
-  //   navLinks.forEach(link => {
-  //     link.classList.remove('active');
-  //     if (link.classList.contains(current)) {
-  //       link.classList.add('active');
-  //     }
-  //   });
-  // })
-
   return (
     <div>
       <body>
-        {/* <Helmet>
-          <script
-            src={script}
-            crossorigin="anonymous"
-            async
-          ></script>
-        </Helmet> */}
-
 
         <Navigation />
 
@@ -100,12 +46,10 @@ function App() {
           <div className="coverDescription2">Background Pc: Hong Kong Sunset by Ryan Kim</div>
         </section>
 
-        {/* <section id="about">About</section> */}
         <section id="about">
           <About />
         </section>
 
-        {/* <section id="education">Education</section> */}
         <section id="education">
           <Education />
         </section>
@@ -121,8 +65,6 @@ function App() {
         <section id="activities">
           <Activities />
         </section>
-
-        <script src='./script.js' async defer></script>
       </body>
     </div>
   );
