@@ -1,32 +1,41 @@
-import ActivityItems from './ActivityItems.jsx'
-import beta from '../../beta.png'
-import React, { useState, useEffect, useLayoutEffect } from 'react'
+import ActivityItems from './ActivityItems.jsx';
+import React, { useState, useEffect, useLayoutEffect } from 'react';
+import ReactDOM from 'react-dom';
+import Beta from './Beta';
+import KSA from './KSA';
+import Fern from './Fern';
+import Volleyball from './Volleyball'
 
 function Activities() {
+
+
+    // const [open, setOpen] = React.useState(false);
+    // const handleOpen = () => setOpen(true);
+    // const handleClose = () => setOpen(false);
 
     return (
         <div>
             <h2 className="sectionTitle">Activities</h2>
             <h3 className="sectionSubtitle">Interests and positions.</h3>
             <div className="activitiesContainer">
-                {/* {ActivityItems.map((item, index) => {
-                    return (
-                        <div className="activityItem" key={item.name}></div>
-                    )
-                })} */}
-                <div className="activityItem">
-                    {/* <img src={beta} id="myBtn" className="activityImg" /> */}
-                    <button id="myBtn">Open Modal</button>
 
-                    <div id="betaModal" className="modal">
-                        <div className="betaContent">
-                            <span className="close">&times;</span>
-                            <h4 className="activityTitle">Beta Alpha Omega</h4>
-                            {/* <h5 className="activityPosition">Diversity, Equity, and Inclusion Chair</h5> */}
-                        </div>
-                    </div>
+                <Beta className="activityItem" />
+                <KSA className="activityItem" />
+                <Fern className="activityItem" />
+                <Volleyball className="activityItem" />
 
-                </div>
+                {/* <div>
+                    <img className="activityImg" onClick={handleOpen} src={ksa} />
+                    <Modal
+                        open={open}
+                        onClose={handleClose}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description"
+                    >
+                        <h4 className="activityTitle">KSA</h4>
+                        
+                    </Modal>
+                </div> */}
 
             </div>
         </div>

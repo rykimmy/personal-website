@@ -355,17 +355,16 @@ section:nth-child(odd) {
 /* ------------------------------------------- */
 
 .projectContainer {
-    margin-bottom: 16vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-    /* display: flex;
     flex-wrap: wrap;
-    flex-direction: row; */
 
-    text-align: center;
+    width: 70vw;
 }
 
 .projectItem {
-    /* background-color: #07487e; */
     background-color: white;
     color: #323946;
 
@@ -382,11 +381,11 @@ section:nth-child(odd) {
 }
 
 .projectTitle {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
     padding-top: 0;
-    font-size: 0.6em;
-    font-weight: 200;
+    font-size: 1.7em;
+    font-weight: 300;
 }
 
 .languageDetails {
@@ -397,13 +396,11 @@ section:nth-child(odd) {
 
 .projectLanguage {
     /* background-color: #1f242d; */
-    background-color: #323946;
+    background-color: #1f242d;
     /* color: #f7f4ef; */
     color: orange;
-    /* color: aqua; */
-    /* color: orange; */
 
-    font-size: 0.4em;
+    font-size: 1.0em;
     font-weight: 150;
 
     margin-top: 0.6em;
@@ -421,7 +418,7 @@ section:nth-child(odd) {
 .projectDescription {
     margin-bottom: 2.0em;
 
-    font-size: 0.3em;
+    font-size: 0.9em;
 
     padding: 0;
 
@@ -440,10 +437,10 @@ section:nth-child(odd) {
 }
 
 .github {
-    background-color: #1f242d;
+    background-color: #171a1e; /* DARKER THAN DARKER */
     color: #f7f4ef;
 
-    font-size: 0.4em;
+    font-size: 1em;
     font-weight: 150;
     text-decoration: none;
 
@@ -478,57 +475,113 @@ section:nth-child(odd) {
 /* ------------- ACTIVITY SECTION ------------ */
 /* ------------------------------------------- */
 
-.activityImg {
-    max-width: 250px;
-    max-height: 250px;
+/* FORMATTING THE MODAL IMAGES */
+/* .activitiesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    width: 35vw;
+} */
+
+.projectImg {
+    width: 250px;
+    height: 250px;
+
+    object-fit: cover;
 
     vertical-align: middle;
 
-    border-radius: 10%;
+    border: 2px solid white;
+
+    margin-top: 30px;
+
+    /* border-radius: 10%; */
+
+
+
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
 
 }
 
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
+.imgContainer {
+    position: relative;
 }
 
-.betaContent {
-    background-color: #fefefe;
-    margin: 15% auto;
-    /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    /* Could be more or less, depending on screen size */
+.imgText {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+.text {
+    color: white;
+    font-size: 0.6em;
+    font-weight: 200;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
+.imgContainer:hover .projectImg {
+    opacity: 0.3;
+}
+
+.imgContainer:hover .imgText {
+    opacity: 1;
+}
+
+/*
+COLORS
+#323946 – lighter
+#1f242d - darker
+*/
+
+.modalItem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 45vh;
+    background-color: #323946;
+    color: white;
+    box-shadow: 24;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.activityTitle {
+    color: orange;
+    font-size: 1.5em;
+
+    margin-top: 3vh;
+    /* margin-left: 2vw; */
+}
+
+.activitySubtitle {
+    color: orange;
+    font-size: 1.2em;
+    font-weight: 200;
+
+    /* margin-left: 2vw; */
+}
+
+.activityDescription {
+    margin-top: 3vh;
+    color: white;
+    font-weight: 100;
+    font-style: italic;
+    list-style-type: none;
+}
+
+.descriptionItem {
     text-decoration: none;
-    cursor: pointer;
 }
