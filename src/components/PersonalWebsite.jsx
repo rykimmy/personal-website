@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 import Modal from '@mui/material/Modal';
-import sudoku from '../../sudoku.png';
+import pw from '../../website.png';
 
-function Sudoku() {
+function PersonalWebsite() {
 
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -11,9 +11,9 @@ function Sudoku() {
     return (
         <div>
             <div onClick={handleOpen} className="imgContainer">
-                <img className="projectImg" src={sudoku} />
+                <img className="projectImg" src={pw} />
                 <div className="imgText">
-                    <div className="text">Sudoku</div>
+                    <div className="text">Personal Website</div>
                 </div>
             </div>
 
@@ -24,23 +24,24 @@ function Sudoku() {
                 aria-describedby="modal-modal-description"
             >
                 <div className="modalItem">
-                    <h4 className="projectTitle">Sudoku</h4>
+                    <h4 className="projectTitle">Personal Website</h4>
 
                     <div className="languageDetails">
-                        <h5 className="projectLanguage">C</h5>
-                        <h5 className="projectLanguage">Python</h5>
+                        <h5 className="projectLanguage">HTML</h5>
+                        <h5 className="projectLanguage">CSS</h5>
+                        <h5 className="projectLanguage">React</h5>
                     </div>
 
-                    <p className="projectDescription">A program that solves sudoku puzzles given through standard input as well as creates original, single-solution sudoku puzzles for users to solve. This program utilizes a back-tracking algorithm to both solve and create puzzles.</p>
+                    <p className="projectDescription">What you are seeing right now! A personal website applying my skills in web development and UI/UX that displays my portfolio.</p>
 
                     <div className="linkContainer">
-                        <p className="projectLink"><a className="github" target="_blank" href="https://github.com/rykimmy/sudoku">Github</a></p>
+                        <p className="projectLink"><a className="github" target="_blank" href="https://github.com/rykimmy/personal-website">Github</a></p>
                     </div>
                 </div>
             </Modal>
         </div>
-        
+
     )
 }
 
-export default Sudoku
+export default PersonalWebsite

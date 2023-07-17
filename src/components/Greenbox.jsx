@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 import Modal from '@mui/material/Modal';
-import greenbox from '../../tse.png';
+import greenbox from '../../widgets.png';
 
 function Greenbox() {
 
@@ -10,10 +10,10 @@ function Greenbox() {
 
     return (
         <div>
-            <div className="imgContainer">
+            <div onClick={handleOpen} className="imgContainer">
                 <img className="projectImg" src={greenbox} />
                 <div className="imgText">
-                    <div className="text" onClick={handleOpen}>Greenbox Storage Widgets</div>
+                    <div className="text">Greenbox Storage Widgets</div>
                 </div>
             </div>
 

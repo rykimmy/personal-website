@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 import Modal from '@mui/material/Modal';
-import pos from '../../tse.png';
+import pos from '../../pos.png';
 
 function POS() {
 
@@ -10,10 +10,10 @@ function POS() {
 
     return (
         <div>
-            <div className="imgContainer">
+            <div onClick={handleOpen} className="imgContainer">
                 <img className="projectImg" src={pos} />
                 <div className="imgText">
-                    <div className="text" onClick={handleOpen}>Part of Speech Tagger</div>
+                    <div className="text">Part of Speech Tagger</div>
                 </div>
             </div>
 

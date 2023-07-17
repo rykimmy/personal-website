@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 import Modal from '@mui/material/Modal';
-import cge from '../../tse.png';
+import cge from '../../graphical-editor.png';
 
 function CGE() {
 
@@ -10,10 +10,10 @@ function CGE() {
 
     return (
         <div>
-            <div className="imgContainer">
+            <div onClick={handleOpen} className="imgContainer">
                 <img className="projectImg" src={cge} />
                 <div className="imgText">
-                    <div className="text" onClick={handleOpen}>Collaborative Graphical Editor</div>
+                    <div className="text">Collaborative Graphical Editor</div>
                 </div>
             </div>
 

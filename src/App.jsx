@@ -65,6 +65,8 @@ function App() {
         <section id="activities">
           <Activities />
         </section>
+
+        <a  href="https://icons8.com/icon/69120/search-bar">Search Bar</a> icon by <a href="https://icons8.com">Icons8</a>
       </body>
     </div>
   );

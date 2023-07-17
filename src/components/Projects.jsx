@@ -7,6 +7,8 @@ import CGE from './CGE';
 import POS from './POS';
 import PhotographyPortfolio from './PhotographyPortfolio';
 import Greenbox from './Greenbox';
+import HuffmanEncoding from './HuffmanEncoding';
+import PersonalWebsite from './PersonalWebsite';
 
 function Projects() {
     return (
@@ -21,7 +23,8 @@ function Projects() {
                 <POS />
                 <PhotographyPortfolio />
                 <Greenbox />
-
+                <HuffmanEncoding />
+                <PersonalWebsite />
 
                 {/* {ProjectItems.map((item, index) => {
                     return (

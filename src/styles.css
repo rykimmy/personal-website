@@ -354,6 +354,14 @@ section:nth-child(odd) {
 /* ------------- PROJECTS SECTION ------------ */
 /* ------------------------------------------- */
 
+/*
+COLORS
+#323946 – lighter
+#1f242d - darker
+*/
+
+/* MODAL STUFF */
+
 .projectContainer {
     display: flex;
     flex-direction: row;
@@ -362,23 +370,73 @@ section:nth-child(odd) {
     flex-wrap: wrap;
 
     width: 70vw;
+
+    margin-bottom: 15vh;
 }
 
-.projectItem {
-    background-color: white;
-    color: #323946;
+.projectImg {
+    width: 250px;
+    height: 250px;
 
-    margin-top: 3%;
-    margin-bottom: 6%;
+    object-fit: cover;
 
-    padding: 2%;
+    vertical-align: middle;
 
+    border: 4px solid white;
+
+    margin-top: 30px;
+
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+}
+
+.imgContainer {
+    position: relative;
+}
+
+.imgText {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text {
+    color: orange;
+    font-size: 0.6em;
+    font-weight: 400;
+}
+
+.imgContainer:hover .projectImg {
+    opacity: 0.2;
+}
+
+.imgContainer:hover .imgText {
+    opacity: 1;
+}
+
+.modalItem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 45vh;
+    background-color: #323946;
+    color: white;
+    box-shadow: 24;
     border-radius: 10px;
 
-    width: 60vw;
-
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    text-align: center;
 }
+
+/* PROJECT STUFF */
 
 .projectTitle {
     margin-top: 3vh;
@@ -416,7 +474,6 @@ section:nth-child(odd) {
 }
 
 .projectDescription {
-    margin-bottom: 2.0em;
 
     font-size: 0.9em;
 
@@ -428,12 +485,15 @@ section:nth-child(odd) {
 }
 
 .linkContainer {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    margin-bottom: 3vh;
 }
 
 .github {
@@ -486,77 +546,7 @@ section:nth-child(odd) {
     width: 35vw;
 } */
 
-.projectImg {
-    width: 250px;
-    height: 250px;
 
-    object-fit: cover;
-
-    vertical-align: middle;
-
-    border: 2px solid white;
-
-    margin-top: 30px;
-
-    /* border-radius: 10%; */
-
-
-
-    opacity: 1;
-    transition: .5s ease;
-    backface-visibility: hidden;
-
-}
-
-.imgContainer {
-    position: relative;
-}
-
-.imgText {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.text {
-    color: white;
-    font-size: 0.6em;
-    font-weight: 200;
-}
-
-.imgContainer:hover .projectImg {
-    opacity: 0.3;
-}
-
-.imgContainer:hover .imgText {
-    opacity: 1;
-}
-
-/*
-COLORS
-#323946 – lighter
-#1f242d - darker
-*/
-
-.modalItem {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60vw;
-    height: 45vh;
-    background-color: #323946;
-    color: white;
-    box-shadow: 24;
-    border-radius: 10px;
-
-    text-align: center;
-}
 
 .activityTitle {
     color: orange;

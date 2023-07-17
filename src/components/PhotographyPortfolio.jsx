@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 import Modal from '@mui/material/Modal';
-import pp from '../../tse.png';
+import pp from '../../camera.png';
 
 function PhotographyPortfolio() {
 
@@ -10,10 +10,10 @@ function PhotographyPortfolio() {
 
     return (
         <div>
-            <div className="imgContainer">
+            <div onClick={handleOpen} className="imgContainer">
                 <img className="projectImg" src={pp} />
                 <div className="imgText">
-                    <div className="text" onClick={handleOpen}>Photography Portfolio</div>
+                    <div className="text">Photography Portfolio</div>
                 </div>
             </div>
 
