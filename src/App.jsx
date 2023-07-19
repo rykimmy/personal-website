@@ -10,6 +10,7 @@ import Education from './components/Education'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Activities from './components/Activities'
+import Contacts from './components/Contacts'
 
 function App() {
 
@@ -66,7 +67,8 @@ function App() {
           <Activities />
         </section>
 
-        <a  href="https://icons8.com/icon/69120/search-bar">Search Bar</a> icon by <a href="https://icons8.com">Icons8</a>
+        <Contacts />
+
       </body>
     </div>
   );

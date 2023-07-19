@@ -546,32 +546,72 @@ COLORS
     width: 35vw;
 } */
 
+.activitiesContainer {
+    text-align: center;
+    margin-bottom: 12vh;
+}
 
+.activityItem {
+    margin-bottom: 5vh;
+}
 
 .activityTitle {
     color: orange;
-    font-size: 1.5em;
+    font-size: 0.6em;
 
     margin-top: 3vh;
     /* margin-left: 2vw; */
 }
 
-.activitySubtitle {
+.activityPosition {
     color: orange;
-    font-size: 1.2em;
+    font-size: 0.4em;
     font-weight: 200;
-
-    /* margin-left: 2vw; */
 }
 
-.activityDescription {
-    margin-top: 3vh;
+.descriptionContainer {
+    margin-top: 1vh;
     color: white;
     font-weight: 100;
     font-style: italic;
     list-style-type: none;
 }
 
-.descriptionItem {
-    text-decoration: none;
+.description {
+    /* text-decoration: none; */
+    font-size: 0.35em;
+}
+
+/* ------------------------------------------- */
+/* --------- FOOTER/CONTACTS SECTION --------- */
+/* ------------------------------------------- */
+
+footer {
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    max-width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.contactImg {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 50px;
+    max-height: 50px;
+
+    transition: all .3s ease-in-out;
+}
+
+.contactImg:hover {
+    transform: scale(1.1);
 }
