@@ -1,6 +1,5 @@
 import ProjectItems from './ProjectItems';
 import React, { useState, useEffect, useLayoutEffect } from 'react';
-import Modal from '@mui/material/Modal';
 import TSE from './TSE';
 import Sudoku from './Sudoku';
 import CGE from './CGE';

@@ -6,7 +6,7 @@ import css from '../../icons/css.png';
 import js from '../../icons/javascript.png';
 import react from '../../icons/react.png';
 import firebase from '../../icons/firebase.png';
-// import html from "https://icons8.com/icon/7hA5Ny9rDAmV/html-5";
+import swift from '../../icons/swift.png';
 
 // Languages and technologies for about section
 const AboutItems = [
@@ -42,6 +42,10 @@ const AboutItems = [
         language: 'Firebase',
         logo: firebase,
     },
+    {
+        language: 'SwiftUI',
+        logo: swift,
+    }
 ];
 
 export default AboutItems;
