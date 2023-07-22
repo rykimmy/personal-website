@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 import Modal from '@mui/material/Modal';
-import tse from '../../tse.png';
+import tse from '../../../tse.png';
 
 function TSE() {
 

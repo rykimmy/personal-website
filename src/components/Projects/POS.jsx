@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 import Modal from '@mui/material/Modal';
-import pos from '../../pos.png';
+import pos from '../../../pos.png';
 
 function POS() {
 

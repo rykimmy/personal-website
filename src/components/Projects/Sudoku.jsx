@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 import Modal from '@mui/material/Modal';
-import huffman from '../../file.png';
+import sudoku from '../../../sudoku.png';
 
-function HuffmanEncoding() {
+function Sudoku() {
 
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -11,9 +11,9 @@ function HuffmanEncoding() {
     return (
         <div>
             <div onClick={handleOpen} className="imgContainer">
-                <img className="projectImg" src={huffman} />
+                <img className="projectImg" src={sudoku} />
                 <div className="imgText">
-                    <div className="text">Huffman Encoding</div>
+                    <div className="text">Sudoku</div>
                 </div>
             </div>
 
@@ -24,16 +24,17 @@ function HuffmanEncoding() {
                 aria-describedby="modal-modal-description"
             >
                 <div className="modalItem">
-                    <h4 className="projectTitle">Huffman Encoding</h4>
+                    <h4 className="projectTitle">Sudoku</h4>
 
                     <div className="languageDetails">
-                        <h5 className="projectLanguage">Java</h5>
+                        <h5 className="projectLanguage">C</h5>
+                        <h5 className="projectLanguage">Python</h5>
                     </div>
 
-                    <p className="projectDescription">A program that takes a text file and compresses and decompresses the file. It uses Huffman Encoding to compress and decompress the file without any loss.</p>
+                    <p className="projectDescription">A program that solves sudoku puzzles given through standard input as well as creates original, single-solution sudoku puzzles for users to solve. This program utilizes a back-tracking algorithm to both solve and create puzzles.</p>
 
                     <div className="linkContainer">
-                        <p className="projectLink"><a className="github" target="_blank" href="https://github.com/rykimmy/huffman-encoding">Github</a></p>
+                        <p className="projectLink"><a className="github" target="_blank" href="https://github.com/rykimmy/sudoku">Github</a></p>
                     </div>
                 </div>
             </Modal>
@@ -42,4 +43,4 @@ function HuffmanEncoding() {
     )
 }
 
-export default HuffmanEncoding
+export default Sudoku

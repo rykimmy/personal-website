@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 import Modal from '@mui/material/Modal';
-import pp from '../../camera.png';
+import pp from '../../../camera.png';
 
 function PhotographyPortfolio() {
 

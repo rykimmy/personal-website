@@ -1,13 +1,13 @@
 import ProjectItems from './ProjectItems';
 import React, { useState, useEffect, useLayoutEffect } from 'react';
-import TSE from './TSE';
-import Sudoku from './Sudoku';
-import CGE from './CGE';
-import POS from './POS';
-import PhotographyPortfolio from './PhotographyPortfolio';
-import Greenbox from './Greenbox';
-import HuffmanEncoding from './HuffmanEncoding';
-import PersonalWebsite from './PersonalWebsite';
+import TSE from './Projects/TSE';
+import Sudoku from './Projects/Sudoku';
+import CGE from './Projects/CGE';
+import POS from './Projects/POS';
+import PhotographyPortfolio from './Projects/PhotographyPortfolio';
+import Greenbox from './Projects/Greenbox';
+import HuffmanEncoding from './Projects/HuffmanEncoding';
+import PersonalWebsite from './Projects/PersonalWebsite';
 
 function Projects() {
     return (

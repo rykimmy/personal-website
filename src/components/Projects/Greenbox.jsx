@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 import Modal from '@mui/material/Modal';
-import greenbox from '../../widgets.png';
+import greenbox from '../../../widgets.png';
 
 function Greenbox() {
 

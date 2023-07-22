@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 import Modal from '@mui/material/Modal';
-import pw from '../../website.png';
+import pw from '../../../website.png';
 
 function PersonalWebsite() {
 

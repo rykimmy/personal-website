@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 import Modal from '@mui/material/Modal';
-import cge from '../../graphical-editor.png';
+import huffman from '../../../file.png';
 
-function CGE() {
+function HuffmanEncoding() {
 
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -11,9 +11,9 @@ function CGE() {
     return (
         <div>
             <div onClick={handleOpen} className="imgContainer">
-                <img className="projectImg" src={cge} />
+                <img className="projectImg" src={huffman} />
                 <div className="imgText">
-                    <div className="text">Collaborative Graphical Editor</div>
+                    <div className="text">Huffman Encoding</div>
                 </div>
             </div>
 
@@ -24,16 +24,16 @@ function CGE() {
                 aria-describedby="modal-modal-description"
             >
                 <div className="modalItem">
-                    <h4 className="projectTitle">Collaborative Graphical Editor</h4>
+                    <h4 className="projectTitle">Huffman Encoding</h4>
 
                     <div className="languageDetails">
                         <h5 className="projectLanguage">Java</h5>
                     </div>
 
-                    <p className="projectDescription">This program utilizes a client-server to set up a collaborative graphical editor. Multiple users can draw, edit, and remove sketches with one another in real-time.</p>
+                    <p className="projectDescription">A program that takes a text file and compresses and decompresses the file. It uses Huffman Encoding to compress and decompress the file without any loss.</p>
 
                     <div className="linkContainer">
-                        <p className="projectLink"><a className="github" target="_blank" href="https://github.com/rykimmy/collaborative-graphical-editor">Github</a></p>
+                        <p className="projectLink"><a className="github" target="_blank" href="https://github.com/rykimmy/huffman-encoding">Github</a></p>
                     </div>
                 </div>
             </Modal>
@@ -42,4 +42,4 @@ function CGE() {
     )
 }
 
-export default CGE
+export default HuffmanEncoding

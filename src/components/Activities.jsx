@@ -1,10 +1,5 @@
 import ActivityItems from './ActivityItems.jsx';
 import React, { useState, useEffect, useLayoutEffect } from 'react';
-import ReactDOM from 'react-dom';
-import Beta from './Beta';
-import KSA from './KSA';
-import Fern from './Fern';
-import Volleyball from './Volleyball'
 
 function Activities() {
 
@@ -30,16 +25,6 @@ function Activities() {
                         </div>
                     )
                 })}
-
-                {/* <div className="activityItem">
-                    <h4 className="activityTitle">Fern Cafe</h4>
-                    <h5 className="activityPosition">Student Supervisor • March 2021 – Present</h5>
-                    <ul className="descriptionContainer">
-                        <li className="description">Work a minimum of 10 hours weekly serving coffee, food, smoothies, and acai bowls</li>
-                        <li className="description">Responsible for training and overseeing all employees</li>
-                        <li className="description">On call to cover any last-minute shift absences</li>
-                    </ul>
-                </div> */}
 
             </div>
         </div>
