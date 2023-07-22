@@ -7,6 +7,7 @@ import js from '../../icons/javascript.png';
 import react from '../../icons/react.png';
 import firebase from '../../icons/firebase.png';
 import swift from '../../icons/swift.png';
+import figma from '../../icons/figma.png';
 
 // Languages and technologies for about section
 const AboutItems = [
@@ -45,6 +46,10 @@ const AboutItems = [
     {
         language: 'SwiftUI',
         logo: swift,
+    },
+    {
+        language: 'Figma',
+        logo: figma,
     }
 ];
 

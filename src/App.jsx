@@ -70,7 +70,6 @@ function App() {
         <section id="contacts">
           <Contacts />
         </section>
-
       </body>
       <footer>
         <p className="footerText">Created and edited by Ryan Kim</p>
