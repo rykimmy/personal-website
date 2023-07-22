@@ -1,5 +1,5 @@
 import EducationItems from './EducationItems'
-import location from '../../location.png'
+import location from '../../icons/location.png'
 import date from '../../date.png'
 
 function Education() {
@@ -28,7 +28,7 @@ function Education() {
                                     <h5 className="detail">{item.location}</h5>
                                 </div>
                                 <div className="detailItem">
-                                    <img className="detailIcon2" src={date} />
+                                    <img className="detailIcon" src={date} />
                                     <h5 className="detail">{item.time}</h5>
                                 </div>
                             </div>

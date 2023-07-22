@@ -67,9 +67,14 @@ function App() {
           <Activities />
         </section>
 
-        <Contacts />
+        <section id="contacts">
+          <Contacts />
+        </section>
 
       </body>
+      <footer>
+        <p className="footerText">Created and edited by Ryan Kim</p>
+      </footer>
     </div>
   );
 };

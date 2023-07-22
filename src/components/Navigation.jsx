@@ -119,7 +119,8 @@ function Navigation() {
                     <a href="#education">Education</a>
                     <a href="#experience">Experience</a>
                     <a href="#projects">Projects</a>
-                    <a href="#activities ">Activities</a>
+                    <a href="#activities">Activities</a>
+                    <a href="#contacts">Contacts</a>
                 </nav>
 
                 {/* <nav>

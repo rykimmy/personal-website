@@ -122,7 +122,7 @@ nav a.active {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,10 +149,6 @@ section:nth-child(odd) {
     color: aqua;
 }
 
-#about {
-    display: block;
-}
-
 /* "Let me introduce myself" */
 .sectionSubtitle {
     text-align: center;
@@ -162,6 +158,10 @@ section:nth-child(odd) {
 
     font-weight: 200;
 
+}
+
+#about {
+    display: block;
 }
 
 .aboutContainer {
@@ -335,16 +335,6 @@ section:nth-child(odd) {
     max-height: 30px;
 
     border: 2px solid orange;
-    border-radius: 50%;
-
-    background-color: orange;
-}
-
-.detailIcon2 {
-    max-width: 30px;
-    max-height: 30px;
-
-    border: 2px solid black;
     border-radius: 50%;
 
     background-color: orange;
@@ -698,18 +688,30 @@ COLORS
 /* --------- FOOTER/CONTACTS SECTION --------- */
 /* ------------------------------------------- */
 
-footer {
-    /* margin-left: 5%;
-    margin-right: 5%; */
-    max-width: 30vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+.contactTitle {
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 1vh;
+    font-size: 0.5em;
 
+    /* color: rgb(231, 150, 1); */
+    color: aqua;
+}
+
+.contactContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+
+    width: 80vw;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8vh;
+    margin-bottom: 20vh;
+}
+
+.contactItem {
     text-align: center;
 }
 
@@ -718,12 +720,40 @@ footer {
     margin-left: auto;
     margin-right: auto;
 
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 70px;
+    max-height: 70px;
 
     transition: all .3s ease-in-out;
 }
 
 .contactImg:hover {
     transform: scale(1.1);
+}
+
+.linkText {
+    font-size: 0.5em;
+    color: white;
+}
+
+/*
+COLORS
+#323946 – lighter
+#1f242d - darker
+*/
+
+footer {
+    background-color: #090c10;
+    width: 100vw;
+    height: 12vh;
+
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.footerText {
+    font-size: 0.7em;
+    color: grey;
 }
