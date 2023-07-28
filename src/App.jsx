@@ -42,9 +42,11 @@ function App() {
 
         <section id="home">
           <img className="coverPhoto" src={cover} />
-          <div className="coverTitle">Ryan Kim</div>
-          <div className="coverDescription">Aspiring Software Engineer</div>
-          <div className="coverDescription2">Background Pc: Hong Kong Sunset by Ryan Kim</div>
+          <div className="coverContent">
+            <div className="coverTitle">Ryan Kim</div>
+            <div className="coverDescription">Aspiring Software Engineer</div>
+            <div className="coverDescription2">Background Pc: Hong Kong Sunset by Ryan Kim</div>
+          </div>
         </section>
 
         <section id="about">

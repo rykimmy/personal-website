@@ -20,28 +20,28 @@ body {
     padding: 0px;
 }
 
-.coverTitle {
-    color: white;
+.coverContent {
     position: absolute;
-    top: 12%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, 50%);
+}
 
-    font-size: 3em;
+.coverTitle {
+    color: white;
+
+    /* font-size: 3em; */
+    font-size: 10vw;
     font-weight: 400;
-    /* word-wrap:break-word; */
 
     text-align: center;
 }
 
 .coverDescription {
     color: white;
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, 50%);
 
-    font-size: 0.7em;
+    /* font-size: 0.7em; */
+    font-size: 2.3vw;
     font-weight: 100;
     text-align: center;
     width: 100vw;
@@ -49,12 +49,9 @@ body {
 
 .coverDescription2 {
     color: white;
-    position: absolute;
-    top: 57%;
-    left: 50%;
-    transform: translate(-50%, 50%);
 
-    font-size: 0.4em;
+    /* font-size: 0.4em; */
+    font-size: 1.5vw;
     font-weight: 100;
     text-align: center;
     width: 100vw;
@@ -103,7 +100,8 @@ header {
 }
 
 nav a {
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 1.2vw;
     color: #fff;
     text-decoration: none;
     margin: 25px;
@@ -144,7 +142,9 @@ section:nth-child(odd) {
     text-align: center;
     padding-top: 10vh;
     padding-bottom: 1vh;
-    font-size: 0.5em;
+    /* font-size: 0.5em; */
+    font-size: 1.6vw;
+
     /* color: rgb(231, 150, 1); */
     color: aqua;
 }
@@ -152,7 +152,8 @@ section:nth-child(odd) {
 /* "Let me introduce myself" */
 .sectionSubtitle {
     text-align: center;
-    font-size: 0.7em;
+    /* font-size: 0.7em; */
+    font-size: 2.2vw;
 
     padding-bottom: 5vh;
 
@@ -182,8 +183,10 @@ section:nth-child(odd) {
     margin-top: 5%;
     margin-bottom: 5%; */
 
-    max-width: 300px;
-    max-height: 300px;
+    /* max-width: 300px;
+    max-height: 300px; */
+    max-width: 20vw;
+    max-height: 20vw;
 
     border-radius: 50%;
 
@@ -191,7 +194,8 @@ section:nth-child(odd) {
 }
 
 #aboutText {
-    font-size: 0.4em;
+    /* font-size: 0.4em; */
+    font-size: 1.2vw;
     margin-left: 5vw;
 }
 
@@ -200,8 +204,9 @@ section:nth-child(odd) {
     text-align: center;
     padding-top: 10vh;
     padding-bottom: 5vh;
-    font-size: 0.7em;
-    /* color: rgb(231, 150, 1); */
+
+    /* font-size: 0.7em; */
+    font-size: 2.2vw;
 
     font-weight: 400;
 }
@@ -230,6 +235,7 @@ section:nth-child(odd) {
     border-radius: 5px;
 
     padding: 10px;
+    /* padding: 1vw; */
 }
 
 .languageItem:hover {
@@ -240,7 +246,9 @@ section:nth-child(odd) {
 /* Text */
 .language {
     margin-bottom: 0.5em;
-    font-size: 0.2em;
+    /* font-size: 0.2em; */
+    font-size: 0.7vw;
+
     text-align: center;
     color: #1f242d;
     /* color: aqua; */
