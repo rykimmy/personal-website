@@ -4,6 +4,13 @@ function Navigation() {
     let sections = document.querySelectorAll('section');        // FOR ACTIVE NAV
     let navLinks = document.querySelectorAll('header nav a');   // FOR ACTIVE NAV
 
+    // Reloads after DOM is set – on refresh, sometimes runs before DOM is set
+    window.addEventListener("load", function() {
+        navbar = document.querySelector('header');              // FOR CHANGING HEADER BACKGROUND
+        sections = document.querySelectorAll('section');        // FOR ACTIVE NAV
+        navLinks = document.querySelectorAll('header nav a');   // FOR ACTIVE NAV
+    });
+
     window.onscroll = () => {
         // Changes background color of navbar
         if (window.scrollY <= 200) {

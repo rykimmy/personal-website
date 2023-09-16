@@ -22,7 +22,7 @@ function Education() {
                             <h4 className="itemTitle">{item.school}</h4>
                             <h5 className="itemDescription">{item.degree}</h5>
 
-                            <div classname="itemDetails">
+                            <div className="itemDetails">
                                 <div className="detailItem">
                                     <img className="detailIcon" src={location} />
                                     <h5 className="detail">{item.location}</h5>
