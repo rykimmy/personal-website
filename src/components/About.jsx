@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/no-unescaped-entities */
 import profilepic from '../../me.jpg'
 import AboutItems from './AboutItems'
 
@@ -14,9 +16,9 @@ function About() {
             </div>
             <h3 id="subheader">Languages and Technologies</h3>
             <div className="languagesContainer">
-                {AboutItems.map((item, index) => {
+                {AboutItems.map((item, _index) => {
                     return (
-                        <div className="languageItem">
+                        <div key="lan" className="languageItem">
                             <img className="languageImg" src={item.logo} />
                             <h5 className="language">{item.language}</h5>
                         </div>

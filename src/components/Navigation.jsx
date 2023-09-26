@@ -4,7 +4,7 @@ function Navigation() {
     let sections = document.querySelectorAll('section');        // FOR ACTIVE NAV
     let navLinks = document.querySelectorAll('header nav a');   // FOR ACTIVE NAV
 
-    // Reloads after DOM is set – on refresh, sometimes runs before DOM is set
+    // Reloads after DOM is set – on refresh, sometimes runs before DOM is set
     window.addEventListener("load", function() {
         navbar = document.querySelector('header');              // FOR CHANGING HEADER BACKGROUND
         sections = document.querySelectorAll('section');        // FOR ACTIVE NAV
@@ -22,7 +22,7 @@ function Navigation() {
         } else if (window.scrollY > 800) {
             navbar.classList.add('heading');
             navbar.classList.add('header-active');
-        };
+        }
 
         // Highlights active page on navbar on scroll
         sections.forEach(sec => {
@@ -36,7 +36,7 @@ function Navigation() {
                     links.classList.remove('active');
                     document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
                 });
-            };
+            }
         });
     };
 

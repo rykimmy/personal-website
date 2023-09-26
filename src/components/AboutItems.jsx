@@ -8,6 +8,9 @@ import react from '../../icons/react.png';
 import firebase from '../../icons/firebase.png';
 import swift from '../../icons/swift.png';
 import figma from '../../icons/figma.png';
+import api from '../../icons/api.png';
+import mongodb from '../../icons/mongodb.png';
+import nodejs from '../../icons/node-js.png';
 
 // Languages and technologies for about section
 const AboutItems = [
@@ -50,6 +53,18 @@ const AboutItems = [
     {
         language: 'Figma',
         logo: figma,
+    },
+    {
+        language: 'REST API',
+        logo: api,
+    },
+    {
+        language: 'MongoDB',
+        logo: mongodb,
+    },
+    {
+        language: 'Node js',
+        logo: nodejs,
     }
 ];
 
