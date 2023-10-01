@@ -22,7 +22,7 @@ const ExperienceItems = [
         position: "Software Engineer / Research Assistant • June 2023 – Present",
         description: [
             "Assisting Dartmouth professor with research project, which utilizes an eye tracker to provide reading-aid and analytics for browser reading. Accessible as a chrome extension, the service tracks users’ eyes to provide active or trailing highlighting and other functionality meant to aid long-text reading.",
-            "Leveraged full stack web development skills to build server configuration between user data and browser. Brainstormed and implemented new features including providing reading pace and recommendations for user based on eye tracking data.",
+            "Leveraged full stack web development skills to build server configuration between user data and browser. Brainstormed and implemented new features including reading pace, active and trailing highlighting, page-stripping with enlarged text, and re-read recommendations.",
         ],
         skills: [
             "JavaScript",
